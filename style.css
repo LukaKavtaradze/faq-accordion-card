@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+}
+
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: 148px 24px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
+}
+
+.design {
+
+  display: flex;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 24px;
+}
+
+.pattern-mobile {
+  width: 240px;
+  height: 145px;  
+}
+.pattern-dekstop {
+  display: none;
+}
+.woman-mobile {
+ position: absolute;
+ top: -100px;
+  width: 237px;
+  height: 180px;
+}
+.woman-dekstop {
+  display: none;
+}
+
+
+.container{
+ margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+h1{
+    color: #1E1F36;
+font-family: Kumbh Sans;
+font-size: 3.2rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.questions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+    align-items: center;
+}
+.line{
+    width: 279px;
+height: 1px;
+background: #E8E8EA;
+}
+h2{
+color: #4B4C5F;
+font-family: Kumbh Sans;
+font-size: 1.3rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+
+
+h2:hover{
+ color: #F47B56;
+}
