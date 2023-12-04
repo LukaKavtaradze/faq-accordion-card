@@ -1,0 +1,32 @@
+.container{
+    margin-top: 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 38px;
+       background: grey;
+       margin-left: 500px;
+  
+width: 327px;
+height: 535px;
+   }
+   .questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   
+   h2{
+
+
+   }
+   .scroll{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .line{
+    width: 279px;
+height: 1px;
+background: black;
+   }
