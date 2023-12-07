@@ -1,35 +1,63 @@
 
+
+
+
+
+
 var scroll = document.getElementsByClassName("scroll")
 
-var QA = document.getElementsByClassName("QA");
+var QA = [...document.getElementsByClassName("QA")];
 
-for (var i = 0; i < scroll.length; i++) {
-  scroll[i].addEventListener("click", function () {
-    console.log("Question clicked:", this);
 
-    // Find the parent .questions element
+var arrows = document.getElementsByClassName("arrows")
+// console.log(arrows);
+
+
+
+QA.forEach((item) => {
+  item.addEventListener("click", function () {
+
+
+
 
     
+
+    // Find the parent .questions element
     var parentQuestions = this.closest('.questions');
 
     // Find the .scroll and .answers elements within the parent .questions
-    var currentScroll = parentQuestions.querySelector('.scroll');
+    var currentArrows = parentQuestions.lastElementChild;
     var currentAnswers = parentQuestions.querySelector('.answers');
 
-    // Toggle the "active" class on the clicked question
-    this.classList.toggle("active");
-
+    // Rotate the arrows
+    const degree = 180;
     
+    if(currentAnswers.style.display ==="block") {
+      currentArrows.style.transform = 'rotate(0deg)';
 
-    
-    // Toggle the display property of the answers element
-    if (currentAnswers.style.display === "block" || currentAnswers.style.display === "") {
-      currentAnswers.style.display = "none";
-    } else {
-      currentAnswers.style.display = "block";
+      
+
+
     }
+    if(currentAnswers.style.display === "none") {
+      currentArrows.style.transform = `rotate(${degree}deg)`;
+      currentAnswers.style.font_weight = 18
+
+    }
+
+    
+    
+
+
+    // Toggle the display property of the answers element
+
+    currentAnswers.style.display = (currentAnswers.style.display === "none") ? "block" : "none";
   });
-}
+
+
+})
+ 
+
 
 
 
